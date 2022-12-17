@@ -6,7 +6,7 @@ def create_skeleton_script(path, idx: int):
     skeleton = """from util import read_input_file
 
 if __name__ == "__main__":
-    input_date = read_input_file({})
+    input_data = read_input_file({})
         """.format("\"test_in" + str(idx) + ".txt\"")
 
     with open(os.path.join(path, str(idx) + ".py"), 'w') as skeleton_file:
